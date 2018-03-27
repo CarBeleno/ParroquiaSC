@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Crete+Round|Oleo+Script+Swash+Caps');
+*{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+body{
+  background: #E0E0E0;
+}
+.banner{
+  display: flex;
+  justify-content: space-around;
+  /*background:rgba(33, 33, 33, 0.89);*/
+  height: 90px;
+  width: 100%;
+}
+.tituloLogo{
+  display: flex;
+  /*background: blue*/;
+}
+.logo{
+/*  background: red*/;
+  height: 90px;
+  width: 120px;
+}
+.logo img{
+  margin-left: 10px;
+  max-height: 100%;
+  max-width: 97%;
+  min-height: 100%;
+  min-width: 97%;
+}
+.titulo{
+  display: flex;
+  align-items: center;
+}
+.titulo p{;
+  color: #8c0b06;
+  font-size: 1.8em;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  margin-left: 10px;
+}
+.menu{
+  height: 90px;
+}
+.menu .subMenu{
+  margin-top: 40.5px;
+}
+.menu .subMenu .items{
+  float: left;
+  font-family: font-family: 'Crete Round', serif;
+  font-size: 1.3em;
+  width: 190px;
+  text-align: center;
+  cursor:pointer;
+  color: #757575;
+  border-right: 1px solid #adadad;
+  border-left: 1px solid #adadad;
+}
+.menu .subMenu ul li:hover {
+  color: #8c0b05;
+}
+.menu .subMenu .items .subitems{
+  color: #000;
+  border: none;
+  margin-top: 20px;
+  display: none;
+}
+/*.menu ul li{
+  list-style: none;
+}
+.menu .items{
+  float: left;
+  display: block;
+  font-family: font-family: 'Crete Round', serif;
+  font-size: 1.3em;
+  width: 140px;
+  text-align: center;
+  cursor:pointer;
+  color: #757575;
+}
+.menu .items .subitems{
+  display:none;
+  position: absolute;
+  min-width: 140px;
+}
+.menu .items:hover{
+  transition: 0.7s all;
+}
+.menu .items:hover > ul li{
+  display:block;
+}
