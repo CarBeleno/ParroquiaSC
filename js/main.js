@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
 	var altura = $('.fijo').offset().top;
 
 	$(window).on('scroll', function(){
@@ -9,4 +9,4 @@ $(document).ready(function(){
 		}
 	});
 
-});
+});*/
