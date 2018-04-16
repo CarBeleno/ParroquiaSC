@@ -1,4 +1,4 @@
-/*@import url('https://fonts.googleapis.com/css?family=Crete+Round|Oleo+Script+Swash+Caps');*/
+@import url('https://fonts.googleapis.com/css?family=Crete+Round|Oleo+Script+Swash+Caps');
 @import url('https://fonts.googleapis.com/css?family=Francois+One');
 /*Eliminar los margenes y paddings que agrega el navegador por defecto*/
 *{
@@ -7,95 +7,136 @@
   list-style: none;
 }
 /*margenes inferiores a los parrafos*/
-p{
+p {
   margin-bottom: 20px;
 }
-body{
+body {
   background: #f2f2f2;
   text-align: center;
   justify-content: space-around;
 }
-.encabezado{
-  display: flex;
-  justify-content: space-around;
-  height: 80px;
+
+header {
   width: 100%;
   background: #d9d9d9;
-  border-style: hidden;
-  z-index: 100;
+  overflow: hidden; /*elimina errores de float*/
 }
-.tituloLogo{
-  display: flex;
+
+.contenedor {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto; /*contenedores en el centro*/
+  overflow: hidden; /*elimina errores de float*/
 }
-.logo{
-  height: 80px;
-  width: 120px;
+
+
+header .logo {
+  font-size: 29px;
+  text-align: left;
+  float: left;
+  color: #8c0b06;
+  /*font-family: 'Francois One', sans-serif;*/
+  font-family: 'Oleo Script Swash Caps', cursive;
+  overflow: hidden;
+  line-height: 100px;
 }
-.logo img{
+header .imagen{
+  position: absolute;
+  float: left;
+  left: 0;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+/*.logo img{
   margin-left: 0px;
   max-height: 100%;
   max-width: 100%;
   min-height: 100%;
   min-width: 100%;
+}*/
+header nav {
+  float: right;
+  line-height: 100px;
 }
-.titulo{
-  display: flex;
-  align-items: center;
-}
-.titulo p{;
-  color: #8c0b06;
-  font-size: 1.8em;
-  /*font-family: 'Oleo Script Swash Caps', cursive;*/
-  font-family: 'Francois One', sans-serif;
-}
-
-nav {
-  height: 90px;
-  float: left;
-}
-  nav ul{
-    margin-top: 30px;
-    overflow: hidden;
+header nav ul {
+    margin-top: 10px;
   }
-    nav ul li {
-      float: left;
+header nav ul li {
+      display: inline-block;
       font-family: 'Francois One', sans-serif;
-      font-size: 1.3em;
-      width: 190px;
+      font-size: 17px;
+      width: 160px;
       text-align: center;
-      cursor:pointer;
+      cursor: pointer;
       color: #757575;
-      border-right: 1px solid #adadad;
-      border-left: 1px solid #adadad;
+      /*border-right: 1px solid #adadad;
+      border-left: 1px solid #adadad;*/
     }
     nav ul li:hover{
       color: #8c0b05;
     }
-.contenedor{
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto; /*contenedores en el centro*/
-}
-/*---Encabezado fija--
+
 .fijo-fixed {
 	position:fixed;
   z-index: 100;
   display: flex;
   justify-content: space-around;
-  /*background:rgba(33, 33, 33, 0.89);
-  /*height: 90px;
   width: 100%;
-  background: #E0E0E0;
+  background: #d9d9d9;
+  overflow: hidden; /*elimina errores de float*/
+}
+
+ @media screen and (max-width: 980px) {
+   header .logo, header nav{
+     width: 100%;
+     text-align: center;
+     line-height: 30px;
+   }
+   header .imagen {
+     position: static;
+     float: none;
+   }
+ }
+
+ @media screen and (max-width: 1254px) {
+   header .imagen {
+     align-items: center;
+     width: 10%;
+     position: static;
+     ma
+   }
+ }
+
+
+
+
+ /*@media screen and (max-width: 410px) {
+   header .imagen{
+     position: relative;
+     left:30%;
+     width: 20%;
+   }
+   header .logo{
+    width: 100%;
+    font-size: 20px;
+   }
 }*/
-.contenido{
-  padding-top: 90px; /*para que quede debajo de cabecera*/
-  margin-left: 10px;
-  margin-right: 10px;
+
+@media screen and (max-width:684px) {
+  header .imagen{
+    padding-left: 0px;
+    padding-top: 10px;
+
+  }
 
 }
- @media only screen and (max-width:1222px) {
-   .encabezado{
-     width: 100%;
+   .contenido{
+     /*padding-top: 10px; para que quede debajo de cabecera*/
+     margin-left: 10px;
+     margin-right: 10px;
+     background: #f2f2f2;
+     overflow: hidden; /*elimina errores de float*/
    }
-
  }
