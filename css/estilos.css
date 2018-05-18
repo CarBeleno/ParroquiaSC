@@ -2,6 +2,19 @@
 @import url('https://fonts.googleapis.com/css?family=Francois+One');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
 @import url('https://fonts.googleapis.com/css?family=Francois+One');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600');
+
+
+@font-face {
+  font-family: "KaushanScript-Regular";
+  src: url("../fuentes/KaushanScript-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Oswald-Bold";
+  src: url("../fuentes/Oswald-Bold.ttf");
+}
 /*Eliminar los margenes y paddings que agrega el navegador por defecto*/
 *{
   margin: 0px;
@@ -9,102 +22,90 @@
   list-style: none;
 }
 /*margenes inferiores a los parrafos*/
-p {
-  margin-bottom: 20px;
-}
 body {
-  background: #f2f2f2;
+  background: #ffffff;
   text-align: center;
   justify-content: space-around;
 }
 
-header {
+header{
   width: 100%;
-  background: #00004d;
-  overflow: hidden; /*elimina errores de float*/
+  height: 40px;
+/*background: rgba(19, 35, 98, 0.75);*/
+  background: rgba(0, 0, 77, 0.81);
+}
+
+nav{
+  width: 50%;
+  height: 40px;
+  align-items: center;
+  display: flex;
+}
+
+ header nav .icono{
+   height: 20px;
+   margin-left: 15px;
+ }
+
+ .logo{
+   padding-top: 50px;
+   padding-bottom: 50px;
+ }
+
+ h3{
+   font-family: KaushanScript-Regular;
+   color: #380c0c;
+   font-size: 2em;
+ }
+
+ h1{
+   font-family: KaushanScript-Regular;
+   color: rgba(#369ed1, 0.92);
+   font-size: 2.5em;
+ }
+
+ .img-parroquia{
+   width: 105.3%;
+   height: 30%;
+ }
+
+ .img-texto{
+  position: relative;
+  float: left;
+}
+
+.texto{
+  position: absolute;
+  text-align: left;
+  top: 0;
+  padding-left: 100px;
+  padding-top: 40px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.titulo{
+  font-family: Oswald-Bold;
+  color: rgba(252, 251, 254, 0.97);
+  font-size: 2em;
+}
+
+.texto1{
+  font-family: 'Open Sans', sans-serif;
+  color: #d7d7d7;
+  font-size: 1.6em;
+}
+
+.texto2{
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(#e3e0ec, 0.23);
+  font-size: 1.7em;
 }
 
 .contenedor {
+  position: relative;
+  display: inline-block;
   width: 100%;
   max-width: 1000px;
   margin: 0 auto; /*contenedores en el centro*/
   overflow: hidden; /*elimina errores de float*/
-}
-
-
-.w3-bar{width:100%;overflow:hidden}
-header nav {
-  float: center;
-  line-height: 20px;
-}
-header nav ul {
-    margin-top:10px;
-  }
-header nav ul li {
-      display: inline-block;
-      font-family: 'Francois One', sans-serif;
-      font-size: 17px;
-      width: 300px;
-      text-align: center;
-      cursor: pointer;
-      color: #ffffff;
-      /*border-right: 1px solid #adadad;
-      border-left: 1px solid #adadad;*/
-    }
-    nav ul li:hover{
-      color: #8c0b05;
-    }
-
-.fijo-fixed {
-	position:fixed;
-  z-index: 100;
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  background: #d9d9d9;
-  overflow: hidden; /*elimina errores de float*/
-}
-.contenido{
-  /*padding-top: 10px; para que quede debajo de cabecera*/
-  margin-left: 10px;
-  margin-right: 10px;
-  background: #f2f2f2;
-  overflow: hidden; /*elimina errores de float*/
-}
-/*---SLIDER---*/
-.slider{
-  display: none;
-}
-.demo{
-  cursor: pointer;
-}
-/*---RESPONSIVE CABECERA---*/
- @media screen and (max-width: 980px) {
-   header .logo, header nav{
-     width: 100%;
-     text-align: center;
-     line-height: 30px;
-   }
-   header .imagen {
-     position: static;
-     float: none;
-   }
- }
-
- @media screen and (max-width: 1254px) {
-   header .imagen {
-     align-items: center;
-     width: 10%;
-     position: static;
-     ma
-   }
- }
-
-@media screen and (max-width:684px) {
-  header .imagen{
-    padding-left: 0px;
-    padding-top: 10px;
-
-  }
-
 }
