@@ -1,11 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Crete+Round|Oleo+Script+Swash+Caps');
-@import url('https://fonts.googleapis.com/css?family=Francois+One');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
-@import url('https://fonts.googleapis.com/css?family=Francois+One');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:600');
-
-
 @font-face {
   font-family: "KaushanScript-Regular";
   src: url("../fuentes/KaushanScript-Regular.ttf");
@@ -15,6 +7,7 @@
   font-family: "Oswald-Bold";
   src: url("../fuentes/Oswald-Bold.ttf");
 }
+
 /*Eliminar los margenes y paddings que agrega el navegador por defecto*/
 *{
   margin: 0px;
@@ -32,7 +25,7 @@ header{
   width: 100%;
   height: 40px;
 /*background: rgba(19, 35, 98, 0.75);*/
-  background: rgba(0, 0, 77, 0.81);
+  background: rgba(2, 2, 37, 0.91);
 }
 
 nav{
@@ -48,25 +41,31 @@ nav{
  }
 
  .logo{
-   padding-top: 50px;
-   padding-bottom: 50px;
+   padding-top: 30px;
+   padding-bottom: 30px;
  }
 
- h3{
-   font-family: KaushanScript-Regular;
-   color: #380c0c;
+h3{
+	color: white;
+  font-family: Oswald-Bold;
+  font-size: 1.2em;
+ }
+.fondoH3{
+  background-color: rgba(16, 16, 31, 0.89);
+}
+ h1{
+   font-family: Oswald-Bold;
+   color: rgba(#369ed1, 0.92);
    font-size: 2em;
  }
 
- h1{
-   font-family: KaushanScript-Regular;
-   color: rgba(#369ed1, 0.92);
-   font-size: 2.5em;
+ .topnav{
+   float: inherit;
  }
 
  .img-parroquia{
    width: 105.3%;
-   height: 30%;
+   height: auto;
  }
 
  .img-texto{
@@ -75,30 +74,36 @@ nav{
 }
 
 .texto{
+  font-family: Oswald-Bold;
   position: absolute;
   text-align: left;
   top: 0;
   padding-left: 100px;
-  padding-top: 40px;
-  font-family: 'Open Sans', sans-serif;
+  padding-top: 300px;
+}
+
+.textot{
+  font-family: Oswald-Bold;
+  position: absolute;
+  text-align: left;
+  top: 0;
+  padding-left: 100px;
+  padding-top: 360px;
 }
 
 .titulo{
-  font-family: Oswald-Bold;
   color: rgba(252, 251, 254, 0.97);
-  font-size: 2em;
+  font-size: 3vw;
 }
 
 .texto1{
-  font-family: 'Open Sans', sans-serif;
-  color: #d7d7d7;
-  font-size: 1.6em;
+  color: #b8b9c3;
+  font-size: 2vw;
 }
 
 .texto2{
-  font-family: 'Open Sans', sans-serif;
   color: rgba(#e3e0ec, 0.23);
-  font-size: 1.7em;
+  font-size: 2vw;
 }
 
 .contenedor {
@@ -108,4 +113,6 @@ nav{
   max-width: 1000px;
   margin: 0 auto; /*contenedores en el centro*/
   overflow: hidden; /*elimina errores de float*/
+}
+
 }
